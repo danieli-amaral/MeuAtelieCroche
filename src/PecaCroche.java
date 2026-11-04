@@ -7,7 +7,7 @@ public class PecaCroche {
     private String material;
     private String cor;
     private String tamanho;
-    private double TempoProducao;
+    protected double tempoProducao;
 
     //Construtor
 
@@ -17,7 +17,7 @@ public class PecaCroche {
         this.material = material;
         this.cor = cor;
         this.tamanho = tamanho;
-        TempoProducao = tempoProducao;
+        this.tempoProducao = tempoProducao;
     }
 
 
@@ -63,19 +63,49 @@ public class PecaCroche {
     }
 
     public double getTempoProducao() {
-        return TempoProducao;
+        return tempoProducao;
     }
 
     public void setTempoProducao(double tempoProducao) {
-        TempoProducao = tempoProducao;
+        this.tempoProducao = tempoProducao;
+    }
+
+    public void exibirInformacoes() {
+
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: R$ " + precoVenda);
+        System.out.println("Material: " + material);
+        System.out.println("Cor: " + cor);
+        System.out.println("Tamanho: " + tamanho);
+        System.out.println("Tempo: " + tempoProducao + " horas");
+
+    }
+        public double calcularCusto(
+        double custoFio,
+        double custoAdicional,
+        double maoDeObra) {
+
+            double custoTotal = custoFio
+                    + custoAdicional
+                    + maoDeObra;
+
+            return custoTotal;
+        }
+        public double calcularLucro(double custoTotal) {
+        return precoVenda - custoTotal;
+    }
+
+
+        public double calcularMargemLucro(double lucro) {
+        return (lucro / precoVenda) * 100;  // fórmula margem de lucro em porcentagem
+    }
+
     }
 
 
 
 
 
-
-    }
 
 
 
