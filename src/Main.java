@@ -1,9 +1,11 @@
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        // Objetos das peças
+        // Objetos das peças antigas
         PecaCroche bolsa = new PecaCroche(
                 "Bolsa", 150.00, "Fio de Malha",
                 "Bege", "Médio", 8.0
@@ -16,7 +18,7 @@ public class Main {
 
         // Objetos dos materiais
         Material fio = new Material(
-              "Fio de Malha", 35.00, 2, "Rolos"
+                "Fio de Malha", 35.00, 2, "Rolos"
         );
 
         Material agulha = new Material(
@@ -24,13 +26,14 @@ public class Main {
         );
 
         Material linha = new Material(
-               "Linha de Algodão", 12.00
+                "Linha de Algodão", 12.00
         );
-         Material barbante = new Material(
+
+        Material barbante = new Material(
                 "Barbante", 28.00, 5, "Rolos"
         );
 
-        // Exibindo a bolsa
+        // Exibindo a bolsa e calculando valores
         bolsa.exibirInformacoes();
 
         double custo = bolsa.calcularCusto(
@@ -49,32 +52,64 @@ public class Main {
 
         System.out.println("----------------");
 
-        // Exibindo o casaco
+        // Exibindo o casaco antigo
         casaco.exibirInformacoes();
 
         System.out.println("----------------");
 
-        // Exibindo o fio
+        // Exibindo os materiais
         fio.exibirInformacoes();
 
         System.out.println("----------------");
 
-
-        // Exibindo a agulha
         agulha.exibirInformacoes();
 
         System.out.println("----------------");
 
-        // Exibindo a linha
         linha.exibirInformacoes();
 
         System.out.println("----------------");
 
-        // Exibindo o barbante
         barbante.exibirInformacoes();
 
+        System.out.println("----------------");
+
+        // Criando um ArrayList de produtos
+        ArrayList<ProdutoCroche> produtos = new ArrayList<>();
+
+        produtos.add(new Bolsa(
+                "Bolsa de Crochê",
+                180.00,
+                "Fio de Malha",
+                "Alça de Madeira"
+        ));
+
+        produtos.add(new Casaco(
+                "Casaco de Inverno",
+                250.00,
+                "Lã",
+                "Grande",
+                "Manga Longa"
+        ));
+
+        // Adicionando o terceiro produto
+        produtos.add(new Bolsa(
+                "Bolsa de Festa",
+                200.00,
+                "Fio de Malha",
+                "Alça Dourada"
+        ));
+
+        // Percorrendo o ArrayList com FOR
+        System.out.println("=== MEUS PRODUTOS ===");
+
+        for (int i = 0; i < produtos.size(); i++) {
+
+            System.out.println("Produto " + (i + 1));
+
+            produtos.get(i).exibirInformacoes();
+
+            System.out.println("----------------");
+        }
     }
 }
-
-
-

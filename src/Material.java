@@ -16,12 +16,8 @@ public class Material {
 
     // Construtor simplificado
     public Material(String nome, double preco) {
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidade = 0;
-        this.unidade = "Não informado";
+        this(nome, preco, 0, "Não informado");
     }
-
 
     public double getPreco() {
         return preco;
