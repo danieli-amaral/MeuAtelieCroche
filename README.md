@@ -1,12 +1,12 @@
 # 🧶 Meu Ateliê Crochê
 
-🚀 **Projeto pessoal desenvolvido para estudos e prática da linguagem Java.**
+Projeto pessoal desenvolvido para estudos e prática da linguagem Java.
 
-O Meu Ateliê Crochê é um projeto que estou desenvolvendo como parte da minha jornada de aprendizado em programação.
+Estou aprendendo Java de forma autodidata, utilizando conteúdos online, incluindo as aulas do professor Gustavo Guanabara, e colocando em prática os conhecimentos por meio do desenvolvimento desta aplicação.
 
-Sou autodidata em Java e estou construindo esta aplicação para transformar os conhecimentos adquiridos em um curso em prática, desenvolvendo gradualmente um sistema próprio para gerenciamento de um ateliê de crochê.
+O objetivo é construir um sistema para gerenciamento de um ateliê de crochê, enquanto desenvolvo minhas habilidades em programação.
 
-**Tecnologias e conceitos em estudo:**
+**Conceitos em prática:**
 - Java
 - Programação Orientada a Objetos (POO)
 - Classes e objetos
@@ -15,6 +15,4 @@ Sou autodidata em Java e estou construindo esta aplicação para transformar os 
 - Encapsulamento
 - Relacionamento entre classes
 
-📚 Este projeto está em desenvolvimento e acompanha minha evolução nos estudos de Java.
-
-**Aprendendo, praticando e evoluindo um código de cada vez!** 💻
+📚 Projeto em desenvolvimento, acompanhando minha evolução como estudante de programação.
